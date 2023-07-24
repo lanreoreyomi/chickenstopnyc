@@ -4,11 +4,17 @@
       <div class="serve_you_text"><h2>
         Here to serve you!
       </h2>
-        <p>110 Dekalb Avenue Brooklyn NY 11201</p>
+        <p>110 Dekalb Avenue.(Fort Greene)</p>
+        <p>
+          Brooklyn NY 11201
+        </p>
         <p>Backyard Seating</p>
-
-        <p>Fulton Street, Brooklyn NY</p>
+        <br>
+        <p> 1274 Fulton Street (Bed-Stuy)</p>
+        <p> Brooklyn, NY 11216</p>
+        <br>
         <p id="deliver">We Deliver 7 Days</p>
+
       </div>
       <div class="serve_you_img"><img src="../assets/Images/serveyou_location.jpeg" alt="">
       </div>

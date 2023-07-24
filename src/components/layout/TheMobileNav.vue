@@ -33,7 +33,7 @@
               <router-link :to="{name: 'OurStory'}" exact class="router-link"> Our Story</router-link>
             </li>
             <li>
-              <router-link :to="{name: 'Location'}" exact class="router-link"> Location</router-link>
+              <router-link :to="{name: 'Location'}" exact class="router-link"> Locations</router-link>
             </li>
 
             <li id="order_now" @click="toggleDropdown">
@@ -72,8 +72,8 @@ export default {
       navIcon: "https://img.icons8.com/metro/26/ffffff/menu.png",
       showDropdown: false,
       links: [
-        {name: 'Fulton St, Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/57470'},
-        {name: 'Dekalb Av., Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: 'Dekalb Ave. (Fort Greene) , Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: 'Fulton St.(Bed-Stuy), Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/57470'},
       ],
     }
   },
@@ -159,32 +159,23 @@ export default {
           //  height: 100%;
           //  padding-top: 30px;
           //
-          //  .dropdown-menu {
-          //    opacity: 1;
-          //    width: 100%;
-          //    position: absolute;
-          //    z-index: 99999;
-          //    margin-top: 20px;
-          //    //background: $accentColor;
-          //    //height: 120px;
-          //
-          //    li {
-          //      //background: $accentColor;
-          //      padding: unset !important;
-          //      opacity: 1;
-          //      margin: 0;
-          //      width: 100% !important;
-          //      margin-top: 20px !important;;
-          //
-          //      a {
-          //
-          //        font-size: 8px !important;
-          //        font-weight: bold;
-          //
-          //
-          //      }
-          //    }
-          //  }
+            .dropdown-menu {
+              opacity: 1;
+              width: 100%;
+              position: absolute;
+              z-index: 99999;
+              margin-top: 20px;
+              //background: $accentColor;
+              //height: 120px;
+
+              li {
+                a {
+
+                  font-size: 8px !important;
+                  font-weight: bold;
+                }
+              }
+            }
           //
           //}
 

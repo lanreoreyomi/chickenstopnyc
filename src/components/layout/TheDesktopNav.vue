@@ -11,14 +11,14 @@
           <li>
             <router-link :to="{name: 'Home'}" exact class="router-link"> Home</router-link>
           </li>
-<!--          <li>-->
-<!--            <router-link :to="{name: 'Menu'}" exact class="router-link"> Menu</router-link>-->
-<!--          </li>-->
+          <!--          <li>-->
+          <!--            <router-link :to="{name: 'Menu'}" exact class="router-link"> Menu</router-link>-->
+          <!--          </li>-->
           <li>
             <router-link :to="{name: 'OurStory'}" exact class="router-link"> Our Story</router-link>
           </li>
           <li>
-            <router-link :to="{name: 'Location'}" exact class="router-link"> Location</router-link>
+            <router-link :to="{name: 'Location'}" exact class="router-link"> Locations</router-link>
           </li>
 
 
@@ -55,8 +55,8 @@ export default {
       // logo: logo
       showDropdown: false,
       links: [
-        {name: 'Fulton St, Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/57470'},
-        {name: 'Dekalb Av., Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: 'Dekalb Ave. (Fort Greene) , Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: 'Fulton St.(Bed-Stuy), Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/57470'},
       ],
     };
 
@@ -129,7 +129,7 @@ export default {
       margin: 0 auto;
       grid-column-start: 2;
       grid-column-end: 4;
-
+      position: relative;
       ul {
         text-align: end;
         margin-top: 30px;
@@ -171,8 +171,6 @@ export default {
 
         #order_now {
           opacity: 1;
-          position: relative;
-
 
           a {
             text-align: center;
@@ -212,7 +210,7 @@ export default {
             margin-top: 20px;
             //background: $accentColor;
             height: 120px;
-
+left: 500px;
             li {
               //background: $accentColor;
               padding: unset !important;

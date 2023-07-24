@@ -24,9 +24,14 @@
           </div>
           <div class="address">
             <h3>Address</h3>
-            <p>110 Dekalb Avenue</p>
-            <p> Brooklyn NY</p>
-            <p> 11201</p>
+            <p>110 Dekalb Avenue.(Fort Greene)</p>
+            <p>
+              Brooklyn NY 11201
+            </p>
+            <p>Backyard Seating</p>
+            <br>
+            <p> 1274 Fulton Street (Bed-Stuy)</p>
+            <p> Brooklyn, NY 11216</p>
           </div>
           <div class="hours">
             <h3>Hours</h3>
