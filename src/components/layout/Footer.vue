@@ -9,45 +9,51 @@
       <div class="contact_info">
         <div class="contact_details">
           <div class="contact">
-            <h3 class="name">Chicken Stop</h3>
-            <p class="phone">
-              <a href="tel:123-456-7890">917-909-1599</a></p>
+            <h3 class="name">Social Media</h3>
             <div class="socialMedia">
-
               <p>
-                <img src="https://img.icons8.com/ios-filled/18/FFDB16/instagram-new.png" alt="instagrem"/>
-                <a
-                    href="https://www.instagram.com/chickenstopnyc/" target="_blank">
-                  Follow Us </a>
+                <img src="https://img.icons8.com/ios-filled/24/FFDB16/instagram-new.png" alt="instagrem"/>
+                <a href="https://www.instagram.com/chickenstopnyc/" target="_blank"></a>
               </p>
             </div>
           </div>
           <div class="address">
             <h3>Address</h3>
-            <p>110 Dekalb Avenue.(Fort Greene)</p>
-            <p>
-              Brooklyn NY 11201
-            </p>
-            <p>Backyard Seating</p>
-            <br>
-            <p> 1274 Fulton Street (Bed-Stuy)</p>
-            <p> Brooklyn, NY 11216</p>
+            <div class="location_address">
+              <div class="dekab">
+                Chicken Stop (Fort Greene)
+                <br>
+                110 Dekalb Avenue
+                <br>
+                Brooklyn NY 11201
+                <br>
+                Tel: 917-909-1599
+                <br>
+                Info@ChickenStopnyc.com
+              </div>
+              <div class="fulton">
+                Chicken Stop (Bedford Stuyvesant)
+                <br>
+                1274 Fulton Street
+                <br>
+                Brooklyn NY 11216
+                <br>
+                Tel: 347-240-9855
+                <br>
+                Info@ChickenStopnyc.com
+              </div>
+            </div>
+
+
           </div>
           <div class="hours">
             <h3>Hours</h3>
-            <p>MON-SUNDAY</p>
-            <p>11am - 10pm</p>
+            <br>
+            MON-SUNDAY
+            <br>
+            11am - 10pm
           </div>
-          <div class="support">
-            <h3>Contact Us</h3>
-            <p class="phone">
-              <a href="tel:123-456-7890">917-909-1599</a></p>
-            <p>
-              <a href="mailto:info@chickenstopnyc.com">info@chickenstopnyc.com</a>
-            </p>
 
-
-          </div>
         </div>
       </div>
     </div>
@@ -72,34 +78,35 @@ export default {
     background: lighten($bgColor, 5%);
     padding: 20px;
     text-align: start;
+    color: $accentColor;
 
     .contact_details {
-      text-align: center;
+
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 10px;
-      padding: 40px;
+      grid-gap: 20px;
+      padding: 10px;
       margin: 0 auto;
-      width: 70%;
+      width: 80%;
 
       .contact {
-        color: $accentColor;
+
 
         .socialMedia {
 
           p {
-            text-align: center;
+            text-align: start;
             position: relative;
             color: $accentColor;
 
             img {
 
-               cursor: pointer;
+              cursor: pointer;
 
             }
 
             a {
-              text-align: center;
+              text-align: start;
               color: $accentColor;
 
 
@@ -114,20 +121,20 @@ export default {
 
         .name {
           opacity: 1;
-          text-align: center;
+          text-align: start;
 
         }
 
         p {
           color: $accentColor;
-          text-align: center;
+          text-align: start;
 
           line-height: 40px;
           opacity: 0.8;
 
           a {
             display: inline-block;
-            text-align: center;
+            text-align: start;
             color: $accentColor;
             text-decoration: none;
             position: relative;
@@ -141,8 +148,31 @@ export default {
         }
       }
 
-      .address, .hours, .support {
-        text-align: center;
+      .address {
+        text-align: start;
+        grid-column-start: 2;
+        grid-column-end: 4;
+
+        h3 {
+          text-align: center;
+          text-decoration: underline;
+          color: $accentColor;
+
+        }
+
+        .location_address {
+          margin-top: 20px;
+          display: grid;
+          grid-gap: 20px;
+          grid-template-columns: 1fr 1fr;
+          color: $accentColor;
+        }
+
+
+      }
+
+      .hours, .support {
+        text-align: start;
 
         h3 {
           color: $accentColor;
@@ -158,6 +188,7 @@ export default {
           a {
             color: $accentColor;
             text-decoration: none;
+
           }
         }
       }
@@ -198,14 +229,32 @@ export default {
         text-align: center;
         width: 100%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
         grid-gap: 0px;
         padding: 10px;
         margin: 5vh auto;
         position: relative;
 
-        .address, .hours, .support {
+        .hours, .support {
           margin-top: 5vh;
+        }
+
+        .address {
+
+          grid-column-start: unset;
+          grid-column-end: unset;
+
+          h3 {
+            text-align: start;
+          }
+
+          .location_address {
+            margin-top: 20px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            color: $accentColor;
+          }
 
 
         }

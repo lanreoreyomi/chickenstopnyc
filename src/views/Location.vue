@@ -1,19 +1,33 @@
 <template>
   <div class="container">
     <div class="serveYou">
-      <div class="serve_you_text"><h2>
-        Here to serve you!
-      </h2>
-        <p>110 Dekalb Avenue.(Fort Greene)</p>
-        <p>
-          Brooklyn NY 11201
-        </p>
-        <p>Backyard Seating</p>
-        <br>
-        <p> 1274 Fulton Street (Bed-Stuy)</p>
-        <p> Brooklyn, NY 11216</p>
-        <br>
-        <p id="deliver">We Deliver 7 Days</p>
+      <div class="serve_you_text">
+        <h2>Here to serve you!</h2>
+        <div class="locations">
+          <div class="dekab">
+            Chicken Stop (Fort Greene)
+            <br>
+            110 Dekalb Avenue
+            <br>
+            Brooklyn NY 11201
+            <br>
+            Tel: 917-909-1599
+            <br>
+            Info@ChickenStopnyc.com
+          </div>
+          <div class="fulton">
+            Chicken Stop (Bedford Stuyvesant)
+            <br>
+            1274 Fulton Street
+            <br>
+            Brooklyn NY 11216
+            <br>
+            Tel: 347-240-9855
+            <br>
+            Info@ChickenStopnyc.com
+          </div>
+        </div>
+
 
       </div>
       <div class="serve_you_img"><img src="../assets/Images/serveyou_location.jpeg" alt="">
@@ -71,8 +85,15 @@ export default {
 
     h2 {
       margin-top: 25%;
+      margin-bottom: 5%;
       font-size: 50px;
 
+    }
+
+    .locations {
+      color: $accentColor;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -94,6 +115,11 @@ export default {
       grid-template-columns: 1fr;
       width: 100%;
 
+      .locations {
+      grid-gap: 20px;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr;
+      }
     }
   }
 

@@ -159,23 +159,7 @@ export default {
           //  height: 100%;
           //  padding-top: 30px;
           //
-            .dropdown-menu {
-              opacity: 1;
-              width: 100%;
-              position: absolute;
-              z-index: 99999;
-              margin-top: 20px;
-              //background: $accentColor;
-              //height: 120px;
 
-              li {
-                a {
-
-                  font-size: 8px !important;
-                  font-weight: bold;
-                }
-              }
-            }
           //
           //}
 
@@ -225,7 +209,7 @@ export default {
 
       .navLinks {
         position: relative;
-        top: 25%;
+        top: 15%;
         width: 100%;
         text-align: center;
         margin-top: 30px;
@@ -246,7 +230,7 @@ export default {
               display: block;
               transition: 0.3s;
               color: $accentColor;
-              font-size: 30px;
+              font-size: 20px;
 
               &:hover {
                 color: $textColor;

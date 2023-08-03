@@ -55,10 +55,12 @@ export default {
       // logo: logo
       showDropdown: false,
       links: [
-        {name: 'Dekalb Ave. (Fort Greene) , Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/50235'},
-        {name: 'Fulton St.(Bed-Stuy), Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/57470'},
+        {name: '110 DEKALB AVE (FORT GREENE)', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: '1274 FULTON ST (BED-STUY)', url: 'https://direct.chownow.com/order/33509/locations/57470'},
       ],
     };
+
+
 
   },
   methods: {
@@ -210,7 +212,7 @@ export default {
             margin-top: 20px;
             //background: $accentColor;
             height: 120px;
-left: 500px;
+            left: 500px;
             li {
               //background: $accentColor;
               padding: unset !important;
@@ -221,7 +223,7 @@ left: 500px;
 
               a {
 
-                font-size: 8px !important;
+                font-size: 12px !important;
                 font-weight: bold;
 
 

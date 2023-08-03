@@ -10,12 +10,13 @@
       <swiper-slide class="landing_info">
         <div class="landing_text">
           <h1>The <span>Flame Grilled </span> <span class="way">Way</span></h1>
-          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from Dekalb Ave.(Fort Greene)</a>
+          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
+            Dekalb Ave.(Fort Greene)</a>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
             Fulton St.(Bed-Stuy)</a>
-<!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
-<!--            MENU-->
-<!--          </router-link>-->
+          <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
+          <!--            MENU-->
+          <!--          </router-link>-->
         </div>
         <div class="landing_img">
           <img src="../assets/Images/Flame-Grilled-Way.jpg" alt="slider Image">
@@ -26,7 +27,8 @@
 
         <div class="landing_text">
           <h1>Citrus <span>  Marinated Chicken </span><span class="way">and Grilled Slow</span></h1>
-          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from Dekalb Ave.(Fort Greene)</a>
+          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
+            Dekalb Ave.(Fort Greene)</a>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
             Fulton St. (Bed-Stuy)</a>
           <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
@@ -34,7 +36,7 @@
           <!--          </router-link>-->
         </div>
         <div class="landing_img">
-          <img src="../assets/Images/citrus-marinated-Chicken.jpg" alt="slider Image">
+          <img src="../assets/Images/IMAGE_2.jpg" alt="slider Image">
         </div>
 
 
@@ -43,7 +45,8 @@
 
         <div class="landing_text">
           <h1>Our Sides are <span>  Made Fresh </span><span class="way"> & Hand-Made Daily</span></h1>
-          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from Dekalb Ave.(Fort Greene)</a>
+          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
+            Dekalb Ave.(Fort Greene)</a>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
             Fulton St.(Bed-Stuy)</a>
           <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
@@ -52,7 +55,7 @@
 
         </div>
         <div class="landing_img">
-          <img src="../assets/Images/Our-sides-are-made-fresh.jpg" alt="slider Image">
+          <img src="../assets/Images/Image3.jpg" alt="slider Image">
         </div>
 
       </swiper-slide>
@@ -61,7 +64,8 @@
         <div class="landing_text">
           <h1> Flame-Grilled <span>  Ribs lightly glazed</span><span
               class="way">in housemade BBQ Sauce!</span></h1>
-          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from Dekalb Ave.(Fort Greene)</a>
+          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
+            Dekalb Ave.(Fort Greene)</a>
 
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
             Fulton St.(Bed-Stuy)</a>
@@ -85,11 +89,11 @@
   <div class="picandvid">
 
     <div class="pic">
-      <h1>Chicken Stop</h1>
+
       <img src="../assets/Images/pic&vid.jpeg" alt="">
     </div>
     <div class="vidoe-space">
-      <video controls="true" autoplay>
+      <video controls="true" autoplay muted>
         <source src="../assets/Images/vidoe.mp4" type="video/mp4">
       </video>
     </div>
@@ -98,24 +102,22 @@
   <div class="featured_menu">
     <h2>Some of Our Best Sellers</h2>
     <div class="featured_menu_items">
-      <featured-menu :img="halfChicken" menu_name="1/2 Chicken"></featured-menu>
-      <featured-menu :img="chickenAndRibs"
-                     menu_name="Chicken Ribs and Combo"></featured-menu>
-      <featured-menu :img="chicken_sandwich_burger"
+      <featured-menu :img="threepcChickenMeal" menu_name="3pc Chicken Meal"></featured-menu>
+      <featured-menu :img="crispychknSdwtch"
                      menu_name="Crispy Chicken Sandwich"></featured-menu>
+      <featured-menu :img="ChickenRibsCombo"
+                     menu_name="Chicken Ribs and Combo"></featured-menu>
+
       <featured-menu :img="goAvocadoSalad"
                      menu_name="Go Avocado Salad"></featured-menu>
+      <featured-menu :img="ChickenStopPita"
+                     menu_name="Chicken Stop Pita"></featured-menu>
+      <featured-menu :img="Tenders"
+                     menu_name="Hand-Breaded Tenders "></featured-menu>
     </div>
- <div class="orderfrom">
-   <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from Dekalb Ave.(Fort Greene)</a>
 
-   <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
-     Fulton St.(Bed-Stuy)</a>
- </div>
   </div>
-  <div class="view-image">
-    <img src="../assets/Images/DSC04859-Edit.jpeg" alt="">
-  </div>
+
 
   <div class="serveYou">
     <div class="serve_you_text"><h2>
@@ -133,10 +135,12 @@
 import {Swiper, SwiperSlide} from 'swiper/vue';
 import featuredMenu from "@/components/FeaturedMenu.vue";
 import userReviews from "@/components/UserReviews.vue";
-import halfChicken from '../assets/Images/halfchicken.38c1b71d.jpeg';
-import chickenAndRibs from '../assets/Images/ChickenandRibsCombo2.064900f9.jpeg';
-import chicken_sandwich_burger from '../assets/Images/chicken_sandwich_burger.jpeg';
- import goAvocadoSalad from '../assets/Images/GoAvocadoSalad2.1e751b6b.jpeg';
+import goAvocadoSalad from '../assets/Images/AVOCADOSALAD.jpg';
+import threepcChickenMeal from '../assets/Images/3pcchicken.jpg';
+import ChickenRibsCombo from '../assets/Images/ComboImage.jpg';
+import crispychknSdwtch from '../assets/Images/CrispyChicken.jpg';
+import ChickenStopPita from '../assets/Images/ChickenStopPita.jpg';
+import Tenders from '../assets/Images/TENDERS.jpg';
 
 
 // Import Swiper styles
@@ -160,10 +164,12 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      halfChicken:halfChicken,
-      chickenAndRibs: chickenAndRibs,
-      chicken_sandwich_burger: chicken_sandwich_burger,
-      goAvocadoSalad: goAvocadoSalad
+      threepcChickenMeal: threepcChickenMeal,
+      crispychknSdwtch: crispychknSdwtch,
+      ChickenStopPita: ChickenStopPita,
+      Tenders: Tenders,
+      goAvocadoSalad: goAvocadoSalad,
+      ChickenRibsCombo: ChickenRibsCombo
     };
   },
   data() {
@@ -265,7 +271,7 @@ export default {
         padding: 12px 26px 12px 20px;
         background: $redFill;
         color: $textColor;
-        font-weight: normal;
+        font-weight: bold;
         display: inline-block;
         width: 500px;
         text-decoration: none;
@@ -379,48 +385,50 @@ export default {
     .featured_menu_items {
 
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 20px;
     }
 
 
   }
-.orderfrom{
-  .btn_filled {
-    opacity: 1;
-    text-align: center;
-    @include homeButton;
-    border-radius: 6px;
-    margin-top: 20px;
-    padding: 12px 26px 12px 20px;
-    background: $redFill;
-    color: $textColor;
-    font-weight: normal;
-    display: inline-block;
-    width: 500px;
-    text-decoration: none;
-    margin-right: 20px;
 
-    &:before {
-      color: $bgColor !important;
-      background: $accentColor;
-    }
-
-    &:hover {
-      color: $bgColor !important;
+  .orderfrom {
+    .btn_filled {
       opacity: 1;
-      border-bottom: none;
+      text-align: center;
+      @include homeButton;
+      border-radius: 6px;
+      margin-top: 20px;
+      padding: 12px 26px 12px 20px;
+      background: $redFill;
+      color: $textColor;
+      font-weight: normal;
+      display: inline-block;
+      width: 500px;
+      text-decoration: none;
+      margin-right: 20px;
+
+      &:before {
+        color: $bgColor !important;
+        background: $accentColor;
+      }
+
+      &:hover {
+        color: $bgColor !important;
+        opacity: 1;
+        border-bottom: none;
+      }
+
+
+      &:hover {
+
+        opacity: 1;
+        border-bottom: none;
+      }
+
     }
-
-
-    &:hover {
-
-      opacity: 1;
-      border-bottom: none;
-    }
-
   }
-}
+
   .view-image {
 
     padding: 100px !important;
@@ -462,6 +470,7 @@ export default {
     width: 72%;
     margin: 0 auto;
   }
+
 }
 
 
@@ -480,8 +489,8 @@ export default {
       .landing_text {
         text-align: center;
         margin: 5vh auto;
-
         grid-area: b;
+
 
         h1 {
           font-size: 30px;
@@ -490,6 +499,7 @@ export default {
         .btn_filled {
           width: 100% !important;
           margin: 2vh auto;
+          font-size: 12px;
         }
 
         .routerlink {
@@ -521,6 +531,7 @@ export default {
 
     .featured_menu {
       padding: unset !important;
+
       .featured_menu_items {
         grid-template-columns: 1fr !important;
         width: 90%;
@@ -581,8 +592,9 @@ export default {
       }
 
     }
+
     .users_review {
-      width: 102%;
+      width: 100%;
       margin: 0 auto;
     }
   }
@@ -706,6 +718,7 @@ export default {
       }
 
     }
+
     .users_review {
       width: 102%;
       margin: 0 auto;
@@ -832,6 +845,7 @@ export default {
       }
 
     }
+
     .users_review {
       width: 102%;
       margin: 0 auto;
@@ -955,6 +969,7 @@ export default {
       }
 
     }
+
     .users_review {
       width: 102%;
       margin: 0 auto;
