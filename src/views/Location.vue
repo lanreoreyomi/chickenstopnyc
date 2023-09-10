@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="location">
     <div class="serveYou">
       <div class="serve_you_text">
         <h2>Here to serve you!</h2>
@@ -16,7 +16,7 @@
             Info@ChickenStopnyc.com
           </div>
           <div class="fulton">
-            Chicken Stop (Bedford Stuyvesant)
+            Chicken Stop (Bed-Stuy)
             <br>
             1274 Fulton Street
             <br>
@@ -68,7 +68,7 @@ export default {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 86%;
+    width: 90%;
 
     .serve_you_text {
       color: #B3B3B3;
@@ -94,6 +94,21 @@ export default {
       color: $accentColor;
       display: grid;
       grid-template-columns: 1fr 1fr;
+
+      .dekab, .fulton {
+        height: 100%;
+        text-align: start;
+        margin: 0 auto;
+        cursor: pointer;
+        background: lighten($bgColor, 10%);
+        border-radius: 6px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+        padding: 30px;
+        transition: 0.5s ease-in-out;
+width: 80%;
+
+      }
+
     }
   }
 
@@ -116,7 +131,7 @@ export default {
       width: 100%;
 
       .locations {
-      grid-gap: 20px;
+        grid-gap: 20px;
         margin-bottom: 20px;
         grid-template-columns: 1fr;
       }

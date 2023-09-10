@@ -9,7 +9,7 @@
 
         <div class="brandName">
           <router-link :to="{name: 'Home'}" class="router-link">
-            <img src="/src/assets/Images/logo.svg" alt="Brand Logo" v-on:click="toggleMenu = 'false'"></router-link>
+            <img src="/src/assets/Images/logo.svg" alt="Brand Logo" ></router-link>
 
         </div>
 
@@ -23,24 +23,21 @@
       <div class="navBar" :class="{'expandMenu': !toggle}">
         <div class="navLinks">
           <ul>
-            <li>
-              <router-link :to="{name: 'Home'}" exact class="router-link"> Home</router-link>
+            <li @click="toggleMenu">
+              <router-link :to="{name: 'Home', hash: '#home'}" exact class="router-link" > Home</router-link>
             </li>
-            <!--            <li>-->
-            <!--              <router-link :to="{name: 'Menu'}" exact class="router-link"> Menu</router-link>-->
-            <!--            </li>-->
-            <li>
-              <router-link :to="{name: 'OurStory'}" exact class="router-link"> Our Story</router-link>
+            <li @click="toggleMenu">
+              <router-link :to="{name: 'OurStory', hash: '#our_story'}" exact class="router-link" > Our Story</router-link>
             </li>
-            <li>
-              <router-link :to="{name: 'Location'}" exact class="router-link"> Locations</router-link>
+            <li @click="toggleMenu">
+              <router-link :to="{name: 'Location', hash: '#location'}" exact class="router-link"> Locations</router-link>
             </li>
 
             <li id="order_now" @click="toggleDropdown">
               <a class="btn_filled">Order Now</a>
 
               <ul v-if="showDropdown" class="dropdown-menu">
-                <li v-for="(link, index) in links" :key="index">
+                <li v-for="(link, index) in links" :key="index" @click="toggleMenu">
                   <a :href="link.url" target="_blank">
                     {{ link.name }}
                   </a>
@@ -72,8 +69,8 @@ export default {
       navIcon: "https://img.icons8.com/metro/26/ffffff/menu.png",
       showDropdown: false,
       links: [
-        {name: 'Dekalb Ave. (Fort Greene) , Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/50235'},
-        {name: 'Fulton St.(Bed-Stuy), Brooklyn', url: 'https://direct.chownow.com/order/33509/locations/57470'},
+        {name: 'ORDER FROM 110 Dekalb Ave (Fort Greene)', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: 'ORDER FROM 1274 Fulton St (Bed-Stuy)', url: 'https://direct.chownow.com/order/33509/locations/57470'},
       ],
     }
   },
@@ -145,30 +142,8 @@ export default {
         .order {
           width: 100%;
           right: 0;
-
-
-          //.orderbtn {
-          //  background: $redFill !important;
-          //  display: block;
-          //  font-weight: bold;
-          //  font-size: 14px;
-          //  text-transform: uppercase;
-          //  text-align: center;
-          //  color: $textColor;
-          //  text-decoration: none;
-          //  height: 100%;
-          //  padding-top: 30px;
-          //
-
-          //
-          //}
-
-
         }
-
         .brandName {
-
-
           padding: 0px;
           margin-top: 1vh;
           text-align: start;
@@ -180,7 +155,6 @@ export default {
         }
 
         .menuIcon {
-
           padding-right: 20px;
           padding-top: 30px;
           text-align: end;
@@ -191,6 +165,7 @@ export default {
         cursor: pointer;
         top: 0;
         right: 0;
+
       }
 
     }
@@ -230,7 +205,7 @@ export default {
               display: block;
               transition: 0.3s;
               color: $accentColor;
-              font-size: 20px;
+              font-size: 16px;
 
               &:hover {
                 color: $textColor;

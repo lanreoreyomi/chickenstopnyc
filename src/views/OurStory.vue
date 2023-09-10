@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
+  <div class="container" id="our_story">
 
     <div class="our_info">
 
       <div class="our_info_img">
-        <img src="../assets/Images/DSC05157a.jpg" alt="restaurant image">
+        <img src="../assets/Images/Store_front.jpg" alt="restaurant image">
       </div>
 
       <div class="more_info">

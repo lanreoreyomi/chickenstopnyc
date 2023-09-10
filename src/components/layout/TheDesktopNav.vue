@@ -9,16 +9,16 @@
       <div class="header_menu">
         <ul>
           <li>
-            <router-link :to="{name: 'Home'}" exact class="router-link"> Home</router-link>
+            <router-link :to="{name: 'Home', hash: '#home'}" exact class="router-link"> Home</router-link>
           </li>
           <!--          <li>-->
           <!--            <router-link :to="{name: 'Menu'}" exact class="router-link"> Menu</router-link>-->
           <!--          </li>-->
           <li>
-            <router-link :to="{name: 'OurStory'}" exact class="router-link"> Our Story</router-link>
+            <router-link :to="{name: 'OurStory', hash: '#our_story'}" exact class="router-link"> Our Story</router-link>
           </li>
           <li>
-            <router-link :to="{name: 'Location'}" exact class="router-link"> Locations</router-link>
+            <router-link :to="{name: 'Location', hash: '#location'}" exact class="router-link"> Locations</router-link>
           </li>
 
 
@@ -55,8 +55,8 @@ export default {
       // logo: logo
       showDropdown: false,
       links: [
-        {name: '110 DEKALB AVE (FORT GREENE)', url: 'https://direct.chownow.com/order/33509/locations/50235'},
-        {name: '1274 FULTON ST (BED-STUY)', url: 'https://direct.chownow.com/order/33509/locations/57470'},
+        {name: 'ORDER FROM 110 DEKALB AVE (FORT GREENE)', url: 'https://direct.chownow.com/order/33509/locations/50235'},
+        {name: 'ORDER FROM 1274 FULTON ST (BED-STUY)', url: 'https://direct.chownow.com/order/33509/locations/57470'},
       ],
     };
 

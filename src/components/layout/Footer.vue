@@ -9,11 +9,12 @@
       <div class="contact_info">
         <div class="contact_details">
           <div class="contact">
-            <h3 class="name">Social Media</h3>
+            <h3 class="socials">Social Media</h3>
             <div class="socialMedia">
               <p>
-                <img src="https://img.icons8.com/ios-filled/24/FFDB16/instagram-new.png" alt="instagrem"/>
-                <a href="https://www.instagram.com/chickenstopnyc/" target="_blank"></a>
+                <a href="https://www.instagram.com/chickenstopnyc/" target="_blank">
+                  <img src="https://img.icons8.com/ios-filled/24/FFDB16/instagram-new.png" alt="instagrem"/> Instagram
+                </a>
               </p>
             </div>
           </div>
@@ -32,7 +33,7 @@
                 Info@ChickenStopnyc.com
               </div>
               <div class="fulton">
-                Chicken Stop (Bedford Stuyvesant)
+                Chicken Stop (Bed Stuy)
                 <br>
                 1274 Fulton Street
                 <br>
@@ -77,10 +78,12 @@ export default {
   .contact_us {
     background: lighten($bgColor, 5%);
     padding: 20px;
-    text-align: start;
+
     color: $accentColor;
+    text-align: center !important;
 
     .contact_details {
+      text-align: center !important;
 
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -90,23 +93,37 @@ export default {
       width: 80%;
 
       .contact {
+        border-right: 2px solid $accentColor;
+        text-align: center !important;
 
+        .socials {
+          text-align: center !important;
+          text-decoration: underline;
+
+        }
 
         .socialMedia {
+          text-align: center !important;
+
+          h3 {
+            text-decoration: underline !important;
+            text-align: center !important;
+          }
 
           p {
-            text-align: start;
+            text-align: center !important;
             position: relative;
             color: $accentColor;
 
-            img {
 
+            img {
+              text-align: center !important;
               cursor: pointer;
 
             }
 
             a {
-              text-align: start;
+              text-align: center !important;
               color: $accentColor;
 
 
@@ -121,26 +138,29 @@ export default {
 
         .name {
           opacity: 1;
-          text-align: start;
+          text-align: center !important;
+
 
         }
 
         p {
           color: $accentColor;
-          text-align: start;
+          text-align: center !important;
+
 
           line-height: 40px;
           opacity: 0.8;
 
           a {
             display: inline-block;
-            text-align: start;
+            text-align: center !important;
+
             color: $accentColor;
             text-decoration: none;
             position: relative;
 
             img {
-
+              text-align: center !important;
 
             }
 
@@ -149,30 +169,36 @@ export default {
       }
 
       .address {
-        text-align: start;
+        border-right: 2px solid $accentColor;
+        text-align: center !important;
         grid-column-start: 2;
         grid-column-end: 4;
+        padding-right: 15px;
+
 
         h3 {
-          text-align: center;
+          text-align: center !important;
           text-decoration: underline;
           color: $accentColor;
 
         }
 
         .location_address {
+          text-align: center !important;
           margin-top: 20px;
           display: grid;
           grid-gap: 20px;
           grid-template-columns: 1fr 1fr;
           color: $accentColor;
+
         }
 
 
       }
 
-      .hours, .support {
-        text-align: start;
+      .hours {
+        text-align: center !important;
+
 
         h3 {
           color: $accentColor;
@@ -197,6 +223,8 @@ export default {
   }
 
   .map {
+    margin-top: 5vh;
+
     iframe {
       width: 100%;
     }
@@ -208,13 +236,21 @@ export default {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .container {
+    border-right: unset;
+
+    .socials {
+      margin-bottom: 20px;
+      text-align: start !important;
+      border-right: unset;
+     }
+
     .contact_us {
       background: lighten($bgColor, 5%);
       padding: 10px;
 
-
       .contact {
         margin-top: 5vh;
+        border-right: unset !important;
 
         p {
 
@@ -240,12 +276,14 @@ export default {
         }
 
         .address {
-
+          border-right: unset;
           grid-column-start: unset;
           grid-column-end: unset;
+          margin-top: 20px;
 
           h3 {
             text-align: start;
+
           }
 
           .location_address {
@@ -254,8 +292,15 @@ export default {
             grid-gap: 20px;
             grid-template-columns: 1fr;
             color: $accentColor;
+
           }
 
+          .dekab {
+            border-bottom: 2px solid $accentColor;
+            padding-bottom: 20px;
+
+            margin: 0 auto;
+          }
 
         }
       }
@@ -277,18 +322,26 @@ export default {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {
+    border-right: unset;
+
+    .socials {
+      margin-bottom: 20px;
+      text-align: start !important;
+      border-right: unset;
+     }
+
     .contact_us {
       background: lighten($bgColor, 5%);
       padding: 10px;
 
-
       .contact {
-        margin-top: 2vh;
+        margin-top: 5vh;
+        border-right: unset !important;
 
         p {
 
           font-weight: bolder;
-          line-height: 70px;
+          line-height: 60px;
           opacity: 0.4;
 
         }
@@ -296,15 +349,42 @@ export default {
 
       .contact_details {
         text-align: center;
+        width: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr !important;
         grid-gap: 0px;
-        width: 94%;
-        margin: 2vh auto;
+        padding: 10px;
+        margin: 5vh auto;
         position: relative;
 
-        .address, .hours, .support {
-          margin-top: 2vh;
+        .hours, .support {
+          margin-top: 5vh;
+        }
+
+        .address {
+          border-right: unset;
+          grid-column-start: unset;
+          grid-column-end: unset;
+          margin-top: 20px;
+          width: 100%;
+          h3 {
+            text-align: start;
+          }
+
+          .location_address {
+            margin-top: 20px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr;
+            color: $accentColor;
+            .dekab {
+              border-bottom: 2px solid $accentColor;
+              padding-bottom: 20px;
+              width: 50%;
+              margin: 0 auto;
+            }
+          }
+
 
         }
       }

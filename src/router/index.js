@@ -39,9 +39,16 @@ const router = new createRouter({
     history: createWebHistory(),
     routes,
     // eslint-disable-next-line no-unused-vars
-    scrollBehavior(to, from, savedPosition) {
-        return { x: 0, y: 0 };
-    },
+    scrollBehavior (to, from, savedPosition) {
+        if (to.hash) {
+            return window.scrollTo({
+                top: document.querySelector(to.hash).offsetTop,
+                behavior: 'smooth'
+            })
+        } else {
+            return { x: 0, y: 0 }
+        }
+    }
 });
 app.use(router);
 export default router;

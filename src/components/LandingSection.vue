@@ -2,21 +2,30 @@
   <div class="container" id="home">
 
     <swiper
-        :slides-per-view="1"
-        :space-between="0"
-        @swiper="onSwiper"
-        @slideChange="onSlideChange">
+        :modules="modules"
+        :autoplay="{
+      delay: 3000,
+      disableOnInteraction: false,}"
 
+        :navigation="true"
+        :updateOnWindowResize="true"
+        :renderExternalUpdate="true"
+        :observer="true"
+        :observeParents="true"
+        :observeSlideChildren="true"
+        :speed="500"
+        :height="600"
+        :lazy="true"
+        :effect="fade"
+        :loop="true"
+    >
       <swiper-slide class="landing_info">
         <div class="landing_text">
           <h1>The <span>Flame Grilled </span> <span class="way">Way</span></h1>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
-            Dekalb Ave.(Fort Greene)</a>
+            110 Dekalb Ave(Fort Greene)</a>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
-            Fulton St.(Bed-Stuy)</a>
-          <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
-          <!--            MENU-->
-          <!--          </router-link>-->
+            1274 Fulton St(Bed-Stuy)</a>
         </div>
         <div class="landing_img">
           <img src="../assets/Images/Flame-Grilled-Way.jpg" alt="slider Image">
@@ -24,59 +33,27 @@
 
       </swiper-slide>
       <swiper-slide class="landing_info">
-
         <div class="landing_text">
           <h1>Citrus <span>  Marinated Chicken </span><span class="way">and Grilled Slow</span></h1>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
-            Dekalb Ave.(Fort Greene)</a>
+            110 Dekalb Ave.(Fort Greene)</a>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
-            Fulton St. (Bed-Stuy)</a>
-          <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
-          <!--            MENU-->
-          <!--          </router-link>-->
+            1274 Fulton St. (Bed-Stuy)</a>
         </div>
         <div class="landing_img">
-          <img src="../assets/Images/IMAGE_2.jpg" alt="slider Image">
+          <img src="../assets/Images/2.jpg" alt="slider Image">
         </div>
-
-
       </swiper-slide>
       <swiper-slide class="landing_info">
-
         <div class="landing_text">
           <h1>Our Sides are <span>  Made Fresh </span><span class="way"> & Hand-Made Daily</span></h1>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
-            Dekalb Ave.(Fort Greene)</a>
+            110 Dekalb Ave.(Fort Greene)</a>
           <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
-            Fulton St.(Bed-Stuy)</a>
-          <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
-          <!--            MENU-->
-          <!--          </router-link>-->
-
+            1274 Fulton St.(Bed-Stuy)</a>
         </div>
         <div class="landing_img">
-          <img src="../assets/Images/Image3.jpg" alt="slider Image">
-        </div>
-
-      </swiper-slide>
-      <swiper-slide class="landing_info">
-
-        <div class="landing_text">
-          <h1> Flame-Grilled <span>  Ribs lightly glazed</span><span
-              class="way">in housemade BBQ Sauce!</span></h1>
-          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/50235" target="_blank">Order from
-            Dekalb Ave.(Fort Greene)</a>
-
-          <a class="btn_filled" href="https://direct.chownow.com/order/33509/locations/57470" target="_blank">Order from
-            Fulton St.(Bed-Stuy)</a>
-          <!--          <router-link :to="{name: 'Menu'}" class="routerlink btn_outline" v-scroll-to="'#menu_home'">SEE-->
-          <!--            MENU-->
-          <!--          </router-link>-->
-
-        </div>
-        <div class="landing_img">
-          <img src="../assets/Images/Flame-Grilled-Ribs-lightly-glazed-in-housemade-BBQ-Sauce.jpg"
-               alt="slider Image">
+          <img src="../assets/Images/3.jpg" alt="slider Image">
         </div>
 
       </swiper-slide>
@@ -85,28 +62,14 @@
 
 
   </div>
-
-  <div class="picandvid">
-
-    <div class="pic">
-
-      <img src="../assets/Images/pic&vid.jpeg" alt="">
-    </div>
-    <div class="vidoe-space">
-      <video controls="true" autoplay muted>
-        <source src="../assets/Images/vidoe.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-
   <div class="featured_menu">
     <h2>Some of Our Best Sellers</h2>
     <div class="featured_menu_items">
-      <featured-menu :img="threepcChickenMeal" menu_name="3pc Chicken Meal"></featured-menu>
+      <featured-menu :img="threepcChickenMeal" menu_name="3PC Chicken Meal"></featured-menu>
       <featured-menu :img="crispychknSdwtch"
                      menu_name="Crispy Chicken Sandwich"></featured-menu>
       <featured-menu :img="ChickenRibsCombo"
-                     menu_name="Chicken Ribs and Combo"></featured-menu>
+                     menu_name="Chicken & BBQ Ribs Combo"></featured-menu>
 
       <featured-menu :img="goAvocadoSalad"
                      menu_name="Go Avocado Salad"></featured-menu>
@@ -132,19 +95,24 @@
 </template>
 
 <script>
-import {Swiper, SwiperSlide} from 'swiper/vue';
-import featuredMenu from "@/components/FeaturedMenu.vue";
-import userReviews from "@/components/UserReviews.vue";
-import goAvocadoSalad from '../assets/Images/AVOCADOSALAD.jpg';
-import threepcChickenMeal from '../assets/Images/3pcchicken.jpg';
-import ChickenRibsCombo from '../assets/Images/ComboImage.jpg';
-import crispychknSdwtch from '../assets/Images/CrispyChicken.jpg';
-import ChickenStopPita from '../assets/Images/ChickenStopPita.jpg';
-import Tenders from '../assets/Images/TENDERS.jpg';
+import {Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper';
 
+// Import Swiper Vue.js components
+import {Swiper, SwiperSlide} from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import featuredMenu from "@/components/FeaturedMenu.vue";
+import userReviews from "@/components/UserReviews.vue";
+import goAvocadoSalad from '../assets/Images/CrispyChicken4.jpg';
+import threepcChickenMeal from '../assets/Images/CrispyChicken1.jpg';
+import ChickenRibsCombo from '../assets/Images/CrispyChicken3.jpg';
+import crispychknSdwtch from '../assets/Images/CrispyChicken.jpg';
+import ChickenStopPita from '../assets/Images/ChickenStopPita.jpg';
+import Tenders from '../assets/Images/CrispyChicken6.jpg';
 
 export default {
   name: "LandingSection",
@@ -155,39 +123,35 @@ export default {
     userReviews
   },
   setup() {
+
     const onSwiper = (swiper) => {
       console.log(swiper);
     };
     const onSlideChange = () => {
       console.log('slide change');
     };
+
     return {
       onSwiper,
       onSlideChange,
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
+    };
+  },
+
+mounted() {
+  document.querySelector('.swiper-button-prev').style.color = 'red';
+  document.querySelector('.swiper-button-next').style.color = 'red';
+},
+
+  data() {
+    return {
       threepcChickenMeal: threepcChickenMeal,
       crispychknSdwtch: crispychknSdwtch,
       ChickenStopPita: ChickenStopPita,
       Tenders: Tenders,
       goAvocadoSalad: goAvocadoSalad,
-      ChickenRibsCombo: ChickenRibsCombo
-    };
-  },
-  data() {
-    return {
-      settings: {
-        "infinite": true,
-        "autoplay": true,
-        "autoplaySpeed": 3000,
-        "dots": true,
-        "dotsClass": "slick-dots custom-dot-class",
-        "edgeFriction": 0.35,
-        "speed": 500,
-        "slidesToShow": 1,
-        "slidesToScroll": 1
-      },
-      prevArrowSettings: {
-        prevArrow: '<button class="slick-prev">Previous</button>',
-      },
+      ChickenRibsCombo: ChickenRibsCombo,
+
     }
   }
 }
@@ -205,15 +169,11 @@ export default {
 }
 
 .container {
+
   color: $textColor;
 
-  button.slick-prev:before, button.slick-next:before {
-    background-color: red !important;
-    color: white !important;
-  }
-
-
   .landing_info {
+
     padding: 100px !important;
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr;
@@ -225,7 +185,7 @@ export default {
     align-content: center;
     align-items: center;
 
-    margin: 0 auto;
+    margin: 10vh auto 0;
 
     .landing_text {
       padding: 0;
@@ -330,6 +290,7 @@ export default {
 
       }
     }
+
   }
 
   .picandvid {
